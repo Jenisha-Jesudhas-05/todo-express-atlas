@@ -5,7 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-// ✅ Root route (so Render doesn't show "Cannot GET /")
 app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
